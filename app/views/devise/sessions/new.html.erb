@@ -1,0 +1,41 @@
+<div class="flex justify-center content-center flex-wrap min-h-screen bg-neutral-50 w-full">
+  <div class="w-full max-w-md p-8 space-y-8 rounded-lg shadow-md bg-white">
+    <%= image_tag "chat.png", class: "w-24 mx-auto" %>
+    <h2 class="text-4xl font-extrabold text-center text-dark">Log in</h2>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "mt-8 space-y-6" }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="space-y-2">
+        <div class="flex flex-col">
+          <%= f.label :email, class: "block text-m font-medium text-gray-700" %>
+          <span class="text-xs text-gray-500">test1@example.com or test2@example.com</span>
+        </div>
+        
+        <%= f.email_field :email, autofocus: true, autocomplete: "email",
+                          class: "appearance-none block w-full px-3 py-2 border border-gray-100 
+                                     rounded-md shadow-sm placeholder-gray-400 focus:outline-none 
+                                     focus:border-rose-200" 
+        %>
+      </div>
+
+      <div class="space-y-2">
+        <div class="flex flex-col">
+          <%= f.label :password, class: "block text-m font-medium text-gray-700" %>
+          <span class="text-xs text-gray-500">pass: 111111</span>
+        </div>
+        <%= f.password_field :password, autocomplete: "current-password",
+                             class: "appearance-none block w-full px-3 py-2 border border-gray-100 
+                                     rounded-md shadow-sm placeholder-gray-400 focus:outline-none 
+                                     focus:border-rose-200" %>
+      </div>
+
+      <div class="pt-4">
+        <%= f.submit "Log in", class: "w-full flex justify-center py-2 px-4 border border-transparent 
+                                      rounded-md shadow-sm text-xl font-medium text-white bg-primary 
+                                      hover:bg-indigo-700 focus:outline-none focus:ring-2 
+                                      focus:ring-offset-2 focus:ring-indigo-500" %>
+      </div>
+    <% end %>
+  </div>
+</div>

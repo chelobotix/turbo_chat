@@ -1,0 +1,100 @@
+/* Clases para color de texto */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.text-base {
+    color: #F0F4F9;
+}
+
+.text-dark {
+    color: #2D3436;
+}
+
+.text-light {
+    color: #FFFEFE;
+}
+
+.text-primary {
+    color: #212121;
+}
+
+.text-secondary {
+    color: #88304E;
+}
+
+.text-tertiary {
+    color: #522546;
+}
+
+/* Clases para color de fondo */
+.bg-base{
+    background-color: #F0F4F9;
+}
+
+.bg-light {
+    background-color: #FFFEFE;
+}
+
+.bg-primary {
+    background-color: #EC7FA9;
+}
+
+.bg-secondary {
+    background-color: #F1E7E7;
+}
+
+.bg-tertiary {
+    background-color: #522546;
+}
+
+/* Clases para bordes */
+.border-primary {
+    border-color: #E23E57;
+}
+
+.border-secondary {
+    border-color: #88304E;
+}
+
+.border-tertiary {
+    border-color: #522546;
+}
+
+/* Clases mixtas para botones */
+.btn-primary {
+    background-color: #E23E57;
+    color: white;
+    border: 1px solid #E23E57;
+}
+
+.btn-secondary {
+    background-color: #88304E;
+    color: white;
+    border: 1px solid #88304E;
+}
+
+.btn-tertiary {
+    background-color: #522546;
+    color: white;
+    border: 1px solid #522546;
+}
+
+/* Clases para botones outline */
+.btn-outline-primary {
+    background-color: transparent;
+    color: #E23E57;
+    border: 1px solid #E23E57;
+}
+
+.btn-outline-secondary {
+    background-color: transparent;
+    color: #88304E;
+    border: 1px solid #88304E;
+}
+
+.btn-outline-tertiary {
+    background-color: transparent;
+    color: #522546;
+    border: 1px solid #522546;
+}
