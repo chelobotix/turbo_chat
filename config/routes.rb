@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   root "rooms#index"
 
   resources :rooms
-  
+
   devise_for :users, skip: [ :registrations ]
-  
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
